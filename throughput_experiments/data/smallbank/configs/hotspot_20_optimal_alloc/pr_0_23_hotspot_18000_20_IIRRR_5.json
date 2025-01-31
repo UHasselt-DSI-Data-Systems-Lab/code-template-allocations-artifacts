@@ -1,0 +1,42 @@
+{
+    "concurrentClients": 100,
+    "dbUrl": "localhost",
+    "dbPort": 5432,
+    "dbUsername": "postgres",
+    "dbPassword": "postgres",
+    "dbName": "postgres",
+
+    "timing": {
+        "warmup": 10,
+        "experiment": 60,
+        "extraTime": 5
+    },
+
+    "numberOfSuperruns": 5,
+    "numberOfRuns": 1,
+    "experimentName": "Promoted_0_23",
+    "category": "non-optimal",
+    "robust": "true",
+
+    "benchmark": "smallBank",
+
+    "smallBank": {
+        "numberOfAccounts": 18000,
+        "programDepositCheckingSamplingWeight": 1,
+        "programDepositCheckingAllocatedIsolationLevel": "SI",
+        "programBalanceSamplingWeight": 1,
+        "programBalanceAllocatedIsolationLevel": "SI",
+        "programBalanceIsPromoted": "false",
+        "programTransactSavingsSamplingWeight": 1,
+        "programTransactSavingsAllocatedIsolationLevel": "RC",
+        "programAmalgamateSamplingWeight": 1,
+        "programAmalgamateAllocatedIsolationLevel": "RC",
+        "programWriteCheckSamplingWeight": 1,
+        "programWriteCheckAllocatedIsolationLevel": "RC",
+        "programWriteCheckIsPromoted": "SavingsChecking",
+
+        "accountSamplingMethod": "hotspot",
+        "hotspotProbability": 0.5,
+        "hotspotSize": 20
+    }
+}

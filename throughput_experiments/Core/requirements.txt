@@ -1,0 +1,6 @@
+attrs==23.1.0
+jsonschema==4.19.1
+jsonschema-specifications==2023.7.1
+psycopg2==2.9.9
+referencing==0.30.2
+rpds-py==0.10.4

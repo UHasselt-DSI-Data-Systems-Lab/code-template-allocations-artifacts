@@ -1,0 +1,2 @@
+include cctest_core/smallBank_config.json
+include cctest_core/smallBank_schema.sql

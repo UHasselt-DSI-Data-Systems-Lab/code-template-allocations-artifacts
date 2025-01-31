@@ -1,0 +1,461 @@
+{
+    "superruns": [
+        {
+            "runs": [
+                {
+                    "completedTotal": 2883505,
+                    "failed": {
+                        "deadlock": 0,
+                        "concurrentWrite": 799155,
+                        "dangerousStructure": 0
+                    },
+                    "completed": {
+                        "RC": 2307635,
+                        "SI": 575870,
+                        "SSI": 0
+                    },
+                    "programs": {
+                        "depositChecking": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 577242,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 494.7437427043915
+                        },
+                        "amalgamate": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 576511,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 989.9864315986633
+                        },
+                        "balance": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 577196,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 718.351580619812
+                        },
+                        "transactSavings": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 576686,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 627.6174628734589
+                        },
+                        "writeCheck": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 799155,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 0,
+                                "SI": 575870,
+                                "SSI": 0
+                            },
+                            "runtime": 3114.956135749817
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "runs": [
+                {
+                    "completedTotal": 2920469,
+                    "failed": {
+                        "deadlock": 0,
+                        "concurrentWrite": 837056,
+                        "dangerousStructure": 0
+                    },
+                    "completed": {
+                        "RC": 2335414,
+                        "SI": 585055,
+                        "SSI": 0
+                    },
+                    "programs": {
+                        "writeCheck": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 837056,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 0,
+                                "SI": 585055,
+                                "SSI": 0
+                            },
+                            "runtime": 3157.547732114792
+                        },
+                        "depositChecking": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 584105,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 497.819509267807
+                        },
+                        "transactSavings": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 584008,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 610.2108962535858
+                        },
+                        "balance": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 583867,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 701.4035816192627
+                        },
+                        "amalgamate": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 583434,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 981.6964235305786
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "runs": [
+                {
+                    "completedTotal": 2824154,
+                    "failed": {
+                        "deadlock": 0,
+                        "concurrentWrite": 789781,
+                        "dangerousStructure": 0
+                    },
+                    "completed": {
+                        "RC": 2258973,
+                        "SI": 565181,
+                        "SSI": 0
+                    },
+                    "programs": {
+                        "balance": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 565237,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 730.0797798633575
+                        },
+                        "transactSavings": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 565640,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 627.0326478481293
+                        },
+                        "depositChecking": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 564826,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 487.7877149581909
+                        },
+                        "amalgamate": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 563270,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 988.4879868030548
+                        },
+                        "writeCheck": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 789781,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 0,
+                                "SI": 565181,
+                                "SSI": 0
+                            },
+                            "runtime": 3121.5477826595306
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "runs": [
+                {
+                    "completedTotal": 2870812,
+                    "failed": {
+                        "deadlock": 0,
+                        "concurrentWrite": 800620,
+                        "dangerousStructure": 0
+                    },
+                    "completed": {
+                        "RC": 2297277,
+                        "SI": 573535,
+                        "SSI": 0
+                    },
+                    "programs": {
+                        "depositChecking": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 573276,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 484.22797751426697
+                        },
+                        "writeCheck": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 800620,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 0,
+                                "SI": 573535,
+                                "SSI": 0
+                            },
+                            "runtime": 3183.8708856105804
+                        },
+                        "amalgamate": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 575439,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 972.6081593036652
+                        },
+                        "transactSavings": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 574405,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 611.5421543121338
+                        },
+                        "balance": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 574157,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 697.4851849079132
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "runs": [
+                {
+                    "completedTotal": 2832074,
+                    "failed": {
+                        "deadlock": 0,
+                        "concurrentWrite": 792708,
+                        "dangerousStructure": 0
+                    },
+                    "completed": {
+                        "RC": 2264922,
+                        "SI": 567152,
+                        "SSI": 0
+                    },
+                    "programs": {
+                        "balance": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 566211,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 720.9543387889862
+                        },
+                        "amalgamate": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 565625,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 995.6865658760071
+                        },
+                        "transactSavings": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 566735,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 629.4219241142273
+                        },
+                        "depositChecking": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 0,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 566351,
+                                "SI": 0,
+                                "SSI": 0
+                            },
+                            "runtime": 489.45350646972656
+                        },
+                        "writeCheck": {
+                            "failed": {
+                                "deadlock": 0,
+                                "concurrentWrite": 792708,
+                                "dangerousStructure": 0
+                            },
+                            "completed": {
+                                "RC": 0,
+                                "SI": 567152,
+                                "SSI": 0
+                            },
+                            "runtime": 3111.1933908462524
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "concurrentClients": 100,
+        "dbUrl": "r26i27n07",
+        "dbPort": 5432,
+        "dbUsername": "postgres",
+        "dbPassword": "postgres",
+        "dbName": "postgres",
+        "timing": {
+            "warmup": 10,
+            "experiment": 60,
+            "extraTime": 5
+        },
+        "numberOfSuperruns": 5,
+        "numberOfRuns": 1,
+        "experimentName": "Promoted_23_2",
+        "category": "detected",
+        "robust": "true",
+        "benchmark": "smallBank",
+        "smallBank": {
+            "numberOfAccounts": 18000,
+            "programDepositCheckingSamplingWeight": 1,
+            "programDepositCheckingAllocatedIsolationLevel": "RC",
+            "programBalanceSamplingWeight": 1,
+            "programBalanceAllocatedIsolationLevel": "RC",
+            "programBalanceIsPromoted": "SavingsChecking",
+            "programTransactSavingsSamplingWeight": 1,
+            "programTransactSavingsAllocatedIsolationLevel": "RC",
+            "programAmalgamateSamplingWeight": 1,
+            "programAmalgamateAllocatedIsolationLevel": "RC",
+            "programWriteCheckSamplingWeight": 1,
+            "programWriteCheckAllocatedIsolationLevel": "SI",
+            "programWriteCheckIsPromoted": "Savings",
+            "accountSamplingMethod": "hotspot",
+            "hotspotProbability": 0.3,
+            "hotspotSize": 20
+        }
+    }
+}

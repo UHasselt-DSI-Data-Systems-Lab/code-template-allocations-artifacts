@@ -1,0 +1,150 @@
+{
+    "properties": {
+        "concurrentClients": { "type": "integer" },
+        "dbUrl": { "type": "string" },
+        "dbPort": { "type": "integer" },
+        "dbUsername": { "type": "string" },
+        "dbPassword": { "type": "string" },
+        "dbName": { "type": "string" },
+
+        "timing": {
+            "warmup": { "type": "integer" },
+            "experiment": { "type": "integer" },
+            "extraTime": { "type": "integer" },
+            "required": ["warmup", "experiment", "extraTime"]
+        },
+
+        "numberOfRuns": { "type": "integer" },
+        "numberOfSuperruns": { "type": "integer" },
+
+        "benchmark": {
+            "type": "string",
+            "enum": ["smallBank"]
+        },
+
+        "experimentName": { "type": "string" },
+        "category": { "type": "string" },
+        
+        "robust": {
+            "type": "string",
+            "enum": ["false", "true"]
+        },
+
+        "smallBank": {
+            "type": "object",
+            "numberOfAccounts": { "type": "integer" },
+            "programDepositCheckingSamplingWeight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "programDepositCheckingAllocatedIsolationLevel": {
+                "type": "enum",
+                "values": ["RC", "SI", "SSI"]
+            },
+            "programBalanceSamplingWeight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "programBalanceAllocatedIsolationLevel": {
+                "type": "enum",
+                "values": ["RC", "SI", "SSI"]
+            },
+            "programBalanceIsPromoted": {
+                "type": "enum",
+                "values": ["false", "Savings", "Checking", "SavingsChecking"]
+            },
+            "programTransactSavingsSamplingWeight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "programTransactSavingsAllocatedIsolationLevel": {
+                "type": "enum",
+                "values": ["RC", "SI", "SSI"]
+            },
+            "programAmalgamateSamplingWeight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "programAmalgamateAllocatedIsolationLevel": {
+                "type": "enum",
+                "values": ["RC", "SI", "SSI"]
+            },
+            "programWriteCheckSamplingWeight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "programWriteCheckAllocatedIsolationLevel": {
+                "type": "enum",
+                "values": ["RC", "SI", "SSI"]
+            },
+            "programWriteCheckIsPromoted": {
+                "type": "enum",
+                "values": ["false", "Savings", "Checking", "SavingsChecking"]
+            },
+
+            "accountSamplingMethod": {
+                "type": "enum",
+                "values": ["zipfian", "hotspot"]
+            },
+            "required": [
+                "accountSamplingMethod",
+                "numberOfAccounts",
+                "programBalanceAllocatedIsolationLevel",
+                "programBalanceSamplingWeight",
+                "programBalanceIsPromoted",
+                "programDepositCheckingAllocatedIsolationLevel",
+                "programDepositCheckingSamplingWeight",
+                "programTransactSavingsAllocatedIsolationLevel",
+                "programTransactSavingsSamplingWeight",
+                "programAmalgamateAllocatedIsolationLevel",
+                "programAmalgamateSamplingWeight",
+                "programWriteCheckAllocatedIsolationLevel",
+                "programWriteCheckSamplingWeight",
+                "programWriteCheckIsPromoted"
+            ],
+            "if": {
+                "properties": {
+                    "accountSamplingMethod": { "const": "zipfian" }
+                }
+            },
+            "then": {
+                "properties": {
+                    "zipfianSkew": { "type": "number" }
+                },
+                "required": ["zipfianSkew"]
+            },
+            "else": {
+                "properties": {
+                    "hotspotSize": { "type": "integer" },
+                    "hotspotProbability": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                    }
+                },
+                "required": ["hotspotSize", "hotspotProbability"]
+            }
+        }
+    },
+    "required": [
+        "concurrentClients",
+        "dbUrl",
+        "dbPort",
+        "dbUsername",
+        "dbPassword",
+        "dbName",
+        "timing",
+        "numberOfRuns",
+        "numberOfSuperruns",
+        "benchmark",
+        "experimentName",
+        "category",
+        "robust",
+        "smallBank"
+    ]
+}
